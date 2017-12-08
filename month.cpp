@@ -39,7 +39,7 @@ void Month::inputMonthChar()
 
 void Month::inputMonthInt()
 {
-    cout<<"Enter the month as an integer: ";
+    cout<<"Enter a month as an integer: ";
     cin>>month;
     cout<<endl;
 
@@ -52,44 +52,44 @@ void Month::inputMonthInt()
 
 void Month::outputMonthChar() const
 {
-    cout<<"You are in the month of ";
+    cout<<"The month is ";
     switch(month)
     {
         case 1:
-            cout<<"Jan.\n";
+            cout<<"January.\n";
             break;
         case 2:
-            cout<<"Feb.\n";
+            cout<<"February.\n";
             break;
         case 3: 
-            cout<<"Mar.\n";
+            cout<<"March.\n";
             break;
         case 4: 
-            cout<<"Apr.\n";
+            cout<<"April.\n";
             exit(1);
         case 5:
             cout<<"May.\n";
             break;
         case 6:
-            cout<<"Jun.\n";
+            cout<<"June.\n";
             break;
         case 7:
-            cout<<"Jul.\n";
+            cout<<"July.\n";
             break;
         case 8: 
-            cout<<"Aug.\n";
+            cout<<"August.\n";
             break;
         case 9:
-            cout<<"Sep.\n";
+            cout<<"September.\n";
             break;
         case 10:
-            cout<<"Oct.\n";
+            cout<<"October.\n";
             break;
         case 11:
-            cout<<"Nov.\n";
+            cout<<"November.\n";
             break;
         case 12:
-            cout<<"Dec.\n";
+            cout<<"December.\n";
             break;
         default:
             {
@@ -160,5 +160,4 @@ void Month::monthInt(char firstLetter, char secondLetter, char thirdLetter)
 Month Month::getNextMonth()
 {
     return Month(month+1);
-
 }
